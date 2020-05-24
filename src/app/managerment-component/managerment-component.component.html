@@ -1,0 +1,40 @@
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <label class="navbar-brand col-sm-3 col-md-2 mr-0">balabala</label>
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <label class="nav-link">Sign out</label>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div>
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="row">
+            <nav class="nav flex-column">
+                <a class="nav-link active" [routerLink]="['user']">用户管理</a>
+                <a class="nav-link" [routerLink]="['product']">学生管理</a>
+                <a class="nav-link" [routerLink]="['exit']">退出</a>
+            </nav>
+            
+        </div>
+            
+        </nav>
+        <div class="col-md-10">
+                <router-outlet></router-outlet>
+            </div>
+    </div>
+  
+
+
+
+
+
+
+</div>
+
+
+
+
+ 
